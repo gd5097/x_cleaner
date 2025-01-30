@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X 정리</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 200px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border: none;
+            background-color: #1da1f2;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0c85d0;
+        }
+    </style>
+</head>
+<body>
+    <h2>X 정리</h2>
+    <label><input type="checkbox" id="excludeMedia"> 미디어(사진) 제외</label>
+    <label><input type="checkbox" id="excludeReposts"> 리포스트 제외</label>
+    <label><input type="checkbox" id="excludeLiked"> 좋아요 삭제</label>
+    <button id="cleanPosts">삭제 실행</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
